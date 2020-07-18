@@ -5,10 +5,19 @@ https://github.com/Zaoldyeckk/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS
 
 ## Progress
 
-- [ ] Lab1
+- [X] Lab1
 - [ ] Lab2
 - [ ] Lab3
 - [ ] Lab4
+
+---
+
+## Hardware Setup
+
+
+**PYNQ-Z1/Z2**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP1_1 and JP1_2) to use the board in the development mode.  Also, make sure that another jumper is placed between J9_2 and J9_3 to select USB as a power source.
+
+---
 
 ## Labs Overview
 

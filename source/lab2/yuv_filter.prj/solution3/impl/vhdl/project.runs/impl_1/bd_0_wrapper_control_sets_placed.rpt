@@ -1,0 +1,105 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  2 15:41:36 2020
+| Host         : DESKTOP-JP4319F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     3 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |           12 |
+| Yes          | No                    | No                     |             448 |          120 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             193 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                    Enable Signal                                                   |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/ap_block_pp0_stage0_subdone |                                                               |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/ap_block_pp0_stage0_subdone | ap_rst                                                        |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv_scale_U0/internal_empty_n_reg[0]                                                            | ap_rst                                                        |                2 |              4 |         2.00 |
+|  ap_clk      |                                                                                                                    | bd_0_i/hls_inst/U0/yuv_scale_U0/ap_rst_0                      |                2 |              5 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/ap_CS_fsm_reg[2]_0[0]                                                                | ap_rst                                                        |                2 |              6 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv_scale_U0/E[0]                                                                               | ap_rst                                                        |                3 |              6 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/add_ln54_1_reg_6790                                                                | bd_0_i/hls_inst/U0/rgb2yuv11_U0/add_ln54_1_reg_679[6]_i_1_n_0 |                2 |              7 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/E[0]                        |                                                               |                2 |              8 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/V_scale_c_U/ap_start_0[0]                                                                       | ap_rst                                                        |                2 |             10 |         5.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/E[0]                                                                               | bd_0_i/hls_inst/U0/V_scale_c_U/SR[0]                          |                4 |             14 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/indvar_flatten_reg_2660                                                            |                                                               |                5 |             14 |         2.80 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/add_ln54_1_reg_6790                                                                |                                                               |                4 |             15 |         3.75 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_mug8j_U43/yuv_filter_mac_mug8j_DSP48_5_U/E[0]                         |                                                               |                5 |             16 |         3.20 |
+|  ap_clk      |                                                                                                                    | ap_rst                                                        |               10 |             19 |         1.90 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mucud_U2/yuv_filter_mac_mucud_DSP48_1_U/B_reg_7180                  |                                                               |                7 |             24 |         3.43 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv_scale_U0/ce_0                                                                               |                                                               |                5 |             24 |         4.80 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/B_reg_7050                   |                                                               |                8 |             30 |         3.75 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/E[0]                                                                                 | bd_0_i/hls_inst/U0/yuv2rgb_U0/x_0_reg_216_0                   |               10 |             30 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/indvar_flatten_reg_2050                                                              | bd_0_i/hls_inst/U0/yuv2rgb_U0/indvar_flatten_reg_205          |                8 |             32 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/p_scale_width_U/yuv2rgb_U0_in_height_read                                                       |                                                               |               15 |             32 |         2.13 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv_scale_U0/indvar_flatten_reg_1650                                                            | bd_0_i/hls_inst/U0/yuv_scale_U0/indvar_flatten_reg_165        |                8 |             32 |         4.00 |
+|  ap_clk      |                                                                                                                    |                                                               |               21 |             42 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/indvar_flatten_reg_2660                                                            | bd_0_i/hls_inst/U0/rgb2yuv11_U0/indvar_flatten_reg_266        |               13 |             48 |         3.69 |
+|  ap_clk      | bd_0_i/hls_inst/U0/rgb2yuv11_U0/ce                                                                                 |                                                               |               15 |             48 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/add_ln100_1_reg_6880         |                                                               |               18 |             57 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/U0/yuv_scale_U0/ce                                                                                 |                                                               |               13 |             64 |         4.92 |
+|  ap_clk      | bd_0_i/hls_inst/U0/V_scale_c_U/rgb2yuv11_U0_V_scale_out_write                                                      |                                                               |               22 |            112 |         5.09 |
++--------------+--------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+
+

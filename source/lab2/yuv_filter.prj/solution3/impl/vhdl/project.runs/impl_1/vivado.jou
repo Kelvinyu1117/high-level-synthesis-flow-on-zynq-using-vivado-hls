@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Aug  2 15:40:43 2020
+# Process ID: 8528
+# Current directory: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/impl_1
+# Command line: vivado.exe -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+# Log file: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/impl_1/bd_0_wrapper.vdi
+# Journal file: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

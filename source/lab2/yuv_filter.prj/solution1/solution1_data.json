@@ -1,0 +1,830 @@
+{
+  "Top": "yuv_filter",
+  "RtlTop": "yuv_filter",
+  "RtlPrefix": "",
+  "SourceLanguage": "c",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "0",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg400",
+    "Speed": "-1"
+  },
+  "HlsSolution": {
+    
+  },
+  "Args": {
+    "in": {
+      "index": "0",
+      "type": {
+        "kinds": [
+          "struct",
+          "pointer"
+        ],
+        "dataType": "image_t",
+        "structImpl": "flat-interface",
+        "fields": {
+          "channels": {
+            "order": "0",
+            "kinds": ["struct"],
+            "dataType": "channel_t",
+            "structImpl": "flat-interface",
+            "fields": {
+              "ch1": {
+                "order": "0",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "in_channels_ch1_address0",
+                  "in_channels_ch1_q0"
+                ],
+                "structImpl": "interface"
+              },
+              "ch2": {
+                "order": "1",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "in_channels_ch2_address0",
+                  "in_channels_ch2_q0"
+                ],
+                "structImpl": "interface"
+              },
+              "ch3": {
+                "order": "2",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "in_channels_ch3_address0",
+                  "in_channels_ch3_q0"
+                ],
+                "structImpl": "interface"
+              }
+            }
+          },
+          "width": {
+            "order": "1",
+            "dataType": "unsigned",
+            "dataWidth": "16",
+            "interfaceRef": "in_width",
+            "structImpl": "field"
+          },
+          "height": {
+            "order": "2",
+            "dataType": "unsigned",
+            "dataWidth": "16",
+            "interfaceRef": "in_height",
+            "structImpl": "field"
+          }
+        }
+      }
+    },
+    "out": {
+      "index": "1",
+      "type": {
+        "kinds": [
+          "struct",
+          "pointer"
+        ],
+        "dataType": "image_t",
+        "structImpl": "flat-interface",
+        "fields": {
+          "channels": {
+            "order": "0",
+            "kinds": ["struct"],
+            "dataType": "channel_t",
+            "structImpl": "flat-interface",
+            "fields": {
+              "ch1": {
+                "order": "0",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "out_channels_ch1_address0",
+                  "out_channels_ch1_d0"
+                ],
+                "structImpl": "interface"
+              },
+              "ch2": {
+                "order": "1",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "out_channels_ch2_address0",
+                  "out_channels_ch2_d0"
+                ],
+                "structImpl": "interface"
+              },
+              "ch3": {
+                "order": "2",
+                "kinds": ["array"],
+                "dataType": "unsigned",
+                "dataWidth": "8",
+                "arraySizes": [
+                  "1920",
+                  "1280"
+                ],
+                "multiInterfaceRef": [
+                  "out_channels_ch3_address0",
+                  "out_channels_ch3_d0"
+                ],
+                "structImpl": "interface"
+              }
+            }
+          },
+          "width": {
+            "order": "1",
+            "dataType": "unsigned",
+            "dataWidth": "16",
+            "interfaceRef": "out_width",
+            "structImpl": "field"
+          },
+          "height": {
+            "order": "2",
+            "dataType": "unsigned",
+            "dataWidth": "16",
+            "interfaceRef": "out_height",
+            "structImpl": "field"
+          }
+        }
+      }
+    },
+    "Y_scale": {
+      "index": "2",
+      "type": {
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "interfaceRef": "Y_scale"
+      }
+    },
+    "U_scale": {
+      "index": "3",
+      "type": {
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "interfaceRef": "U_scale"
+      }
+    },
+    "V_scale": {
+      "index": "4",
+      "type": {
+        "dataType": "unsigned",
+        "dataWidth": "8",
+        "interfaceRef": "V_scale"
+      }
+    }
+  },
+  "Return": {
+    
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "841205",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "yuv_filter",
+    "Version": "1.0",
+    "DisplayName": "Yuv_filter",
+    "Revision": "",
+    "Description": "An IP generated by Vivado HLS",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/..\/yuv_filter.c"],
+    "Vhdl": [
+      "impl\/vhdl\/rgb2yuv.vhd",
+      "impl\/vhdl\/yuv2rgb.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mubkb.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mucud.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mudEe.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mueOg.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mufYi.vhd",
+      "impl\/vhdl\/yuv_filter_mac_mug8j.vhd",
+      "impl\/vhdl\/yuv_filter_p_yuv_hbi.vhd",
+      "impl\/vhdl\/yuv_filter.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/rgb2yuv.v",
+      "impl\/verilog\/yuv2rgb.v",
+      "impl\/verilog\/yuv_filter_mac_mubkb.v",
+      "impl\/verilog\/yuv_filter_mac_mucud.v",
+      "impl\/verilog\/yuv_filter_mac_mudEe.v",
+      "impl\/verilog\/yuv_filter_mac_mueOg.v",
+      "impl\/verilog\/yuv_filter_mac_mufYi.v",
+      "impl\/verilog\/yuv_filter_mac_mug8j.v",
+      "impl\/verilog\/yuv_filter_p_yuv_hbi.v",
+      "impl\/verilog\/yuv_filter.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "DesignXml": "D:\/repo\/high-level-synthesis-flow-on-zynq-using-vivado-hls\/source\/lab2\/yuv_filter.prj\/solution1\/.autopilot\/db\/yuv_filter.design.xml",
+    "DebugDir": "D:\/repo\/high-level-synthesis-flow-on-zynq-using-vivado-hls\/source\/lab2\/yuv_filter.prj\/solution1\/.debug",
+    "ProtoInst": ["D:\/repo\/high-level-synthesis-flow-on-zynq-using-vivado-hls\/source\/lab2\/yuv_filter.prj\/solution1\/.debug\/yuv_filter.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "reset": "ap_rst"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "idle": {"Type": "bool"},
+        "ready": {"Type": "bool"}
+      }
+    },
+    "ap_rst": {
+      "type": "reset",
+      "polarity": "ACTIVE_HIGH",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst",
+      "bundle_role": "default"
+    },
+    "in_channels_ch1_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "in_channels_ch1",
+      "bundle_role": "address0"
+    },
+    "in_channels_ch1_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "in_channels_ch1",
+      "bundle_role": "q0"
+    },
+    "in_channels_ch2_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "in_channels_ch2",
+      "bundle_role": "address0"
+    },
+    "in_channels_ch2_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "in_channels_ch2",
+      "bundle_role": "q0"
+    },
+    "in_channels_ch3_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "in_channels_ch3",
+      "bundle_role": "address0"
+    },
+    "in_channels_ch3_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "in_channels_ch3",
+      "bundle_role": "q0"
+    },
+    "in_height": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "in_height",
+      "bundle_role": "default"
+    },
+    "in_width": {
+      "type": "data",
+      "dir": "in",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "in_width",
+      "bundle_role": "default"
+    },
+    "out_channels_ch1_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "out_channels_ch1",
+      "bundle_role": "address0"
+    },
+    "out_channels_ch1_d0": {
+      "type": "data",
+      "dir": "out",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "out_channels_ch1",
+      "bundle_role": "d0"
+    },
+    "out_channels_ch2_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "out_channels_ch2",
+      "bundle_role": "address0"
+    },
+    "out_channels_ch2_d0": {
+      "type": "data",
+      "dir": "out",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "out_channels_ch2",
+      "bundle_role": "d0"
+    },
+    "out_channels_ch3_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "22",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "22"
+        }},
+      "bundle_name": "out_channels_ch3",
+      "bundle_role": "address0"
+    },
+    "out_channels_ch3_d0": {
+      "type": "data",
+      "dir": "out",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "out_channels_ch3",
+      "bundle_role": "d0"
+    },
+    "out_height": {
+      "type": "data",
+      "dir": "out",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "out_height",
+      "bundle_role": "default"
+    },
+    "out_width": {
+      "type": "data",
+      "dir": "out",
+      "width": "16",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "16"
+        }},
+      "bundle_name": "out_width",
+      "bundle_role": "default"
+    },
+    "U_scale": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "U_scale",
+      "bundle_role": "default"
+    },
+    "V_scale": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "V_scale",
+      "bundle_role": "default"
+    },
+    "Y_scale": {
+      "type": "data",
+      "dir": "in",
+      "width": "8",
+      "ctype": {"DATA": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        }},
+      "bundle_name": "Y_scale",
+      "bundle_role": "default"
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "in_channels_ch1_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "in_channels_ch1_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "in_channels_ch1_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "in_channels_ch2_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "in_channels_ch2_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "in_channels_ch2_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "in_channels_ch3_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "in_channels_ch3_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "in_channels_ch3_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "in_width": {
+      "dir": "in",
+      "width": "16"
+    },
+    "in_height": {
+      "dir": "in",
+      "width": "16"
+    },
+    "out_channels_ch1_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "out_channels_ch1_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch1_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch1_d0": {
+      "dir": "out",
+      "width": "8"
+    },
+    "out_channels_ch2_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "out_channels_ch2_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch2_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch2_d0": {
+      "dir": "out",
+      "width": "8"
+    },
+    "out_channels_ch3_address0": {
+      "dir": "out",
+      "width": "22"
+    },
+    "out_channels_ch3_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch3_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_channels_ch3_d0": {
+      "dir": "out",
+      "width": "8"
+    },
+    "out_width": {
+      "dir": "out",
+      "width": "16"
+    },
+    "out_width_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "out_height": {
+      "dir": "out",
+      "width": "16"
+    },
+    "out_height_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "Y_scale": {
+      "dir": "in",
+      "width": "8"
+    },
+    "U_scale": {
+      "dir": "in",
+      "width": "8"
+    },
+    "V_scale": {
+      "dir": "in",
+      "width": "8"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "yuv_filter",
+      "Instances": [
+        {
+          "ModuleName": "rgb2yuv",
+          "InstanceName": "grp_rgb2yuv_fu_250"
+        },
+        {
+          "ModuleName": "yuv2rgb",
+          "InstanceName": "grp_yuv2rgb_fu_270"
+        }
+      ]
+    },
+    "Info": {
+      "rgb2yuv": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "yuv2rgb": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "yuv_filter": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "rgb2yuv": {
+        "Latency": {
+          "LatencyBest": "280401",
+          "LatencyAvg": "5492921",
+          "LatencyWorst": "17207041",
+          "PipelineIIMin": "280401",
+          "PipelineIIMax": "17207041",
+          "PipelineII": "280401 ~ 17207041",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "10.283"
+        },
+        "Loops": [{
+            "Name": "RGB2YUV_LOOP_X",
+            "TripCount": "",
+            "LatencyMin": "280400",
+            "LatencyMax": "17207040",
+            "Latency": "280400 ~ 17207040",
+            "PipelineII": "",
+            "PipelineDepthMin": "1402",
+            "PipelineDepthMax": "8962",
+            "PipelineDepth": "1402 ~ 8962",
+            "Loops": [{
+                "Name": "RGB2YUV_LOOP_Y",
+                "TripCount": "",
+                "LatencyMin": "1400",
+                "LatencyMax": "8960",
+                "Latency": "1400 ~ 8960",
+                "PipelineII": "",
+                "PipelineDepth": "7"
+              }]
+          }],
+        "Area": {
+          "DSP48E": "3",
+          "FF": "194",
+          "LUT": "495",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "yuv2rgb": {
+        "Latency": {
+          "LatencyBest": "320401",
+          "LatencyAvg": "6277321",
+          "LatencyWorst": "19664641",
+          "PipelineIIMin": "320401",
+          "PipelineIIMax": "19664641",
+          "PipelineII": "320401 ~ 19664641",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "10.723"
+        },
+        "Loops": [{
+            "Name": "YUV2RGB_LOOP_X",
+            "TripCount": "",
+            "LatencyMin": "320400",
+            "LatencyMax": "19664640",
+            "Latency": "320400 ~ 19664640",
+            "PipelineII": "",
+            "PipelineDepthMin": "1602",
+            "PipelineDepthMax": "10242",
+            "PipelineDepth": "1602 ~ 10242",
+            "Loops": [{
+                "Name": "YUV2RGB_LOOP_Y",
+                "TripCount": "",
+                "LatencyMin": "1600",
+                "LatencyMax": "10240",
+                "Latency": "1600 ~ 10240",
+                "PipelineII": "",
+                "PipelineDepth": "8"
+              }]
+          }],
+        "Area": {
+          "DSP48E": "3",
+          "FF": "195",
+          "LUT": "421",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "yuv_filter": {
+        "Latency": {
+          "LatencyBest": "841205",
+          "LatencyAvg": "16478765",
+          "LatencyWorst": "51621125",
+          "PipelineIIMin": "841206",
+          "PipelineIIMax": "51621126",
+          "PipelineII": "841206 ~ 51621126",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "10.723"
+        },
+        "Loops": [{
+            "Name": "YUV_SCALE_LOOP_X",
+            "TripCount": "",
+            "LatencyMin": "240400",
+            "LatencyMax": "14749440",
+            "Latency": "240400 ~ 14749440",
+            "PipelineII": "",
+            "PipelineDepthMin": "1202",
+            "PipelineDepthMax": "7682",
+            "PipelineDepth": "1202 ~ 7682",
+            "Loops": [{
+                "Name": "YUV_SCALE_LOOP_Y",
+                "TripCount": "",
+                "LatencyMin": "1200",
+                "LatencyMax": "7680",
+                "Latency": "1200 ~ 7680",
+                "PipelineII": "",
+                "PipelineDepth": "6"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "12288",
+          "DSP48E": "6",
+          "FF": "679",
+          "LUT": "1446",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "yuv_filter",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2020-08-02 04:09:38 +0800",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2020.1"
+  }
+}

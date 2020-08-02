@@ -1,0 +1,580 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Aug  2 15:37:59 2020
+# Process ID: 12348
+# Current directory: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8464
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1035.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_0_hls_inst_0' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:136]
+INFO: [Synth 8-3491] module 'yuv_filter' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:12' bound to instance 'U0' of component 'yuv_filter' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:92]
+INFO: [Synth 8-3491] module 'rgb2yuv11' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:12' bound to instance 'rgb2yuv11_U0' of component 'rgb2yuv11' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:447]
+INFO: [Synth 8-638] synthesizing module 'rgb2yuv11' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:65]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mul_mubkb' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:31' bound to instance 'yuv_filter_mul_mubkb_U1' of component 'yuv_filter_mul_mubkb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mul_mubkb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mul_mubkb_DSP48_0' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:6' bound to instance 'yuv_filter_mul_mubkb_DSP48_0_U' of component 'yuv_filter_mul_mubkb_DSP48_0' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mul_mubkb_DSP48_0' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mul_mubkb_DSP48_0' (1#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mul_mubkb' (2#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 6 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mucud' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:41' bound to instance 'yuv_filter_mac_mucud_U2' of component 'yuv_filter_mac_mucud' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:331]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mucud' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 6 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mucud_DSP48_1' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:9' bound to instance 'yuv_filter_mac_mucud_DSP48_1_U' of component 'yuv_filter_mac_mucud_DSP48_1' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mucud_DSP48_1' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mucud_DSP48_1' (3#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mucud' (4#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mucud.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mudEe' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:41' bound to instance 'yuv_filter_mac_mudEe_U3' of component 'yuv_filter_mac_mudEe' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mudEe' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mudEe_DSP48_2' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:9' bound to instance 'yuv_filter_mac_mudEe_DSP48_2_U' of component 'yuv_filter_mac_mudEe_DSP48_2' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mudEe_DSP48_2' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mudEe_DSP48_2' (5#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mudEe' (6#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mudEe.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mueOg' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:41' bound to instance 'yuv_filter_mac_mueOg_U4' of component 'yuv_filter_mac_mueOg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mueOg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mueOg_DSP48_3' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:9' bound to instance 'yuv_filter_mac_mueOg_DSP48_3_U' of component 'yuv_filter_mac_mueOg_DSP48_3' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mueOg_DSP48_3' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mueOg_DSP48_3' (7#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mueOg' (8#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mueOg.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mufYi' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:41' bound to instance 'yuv_filter_mac_mufYi_U5' of component 'yuv_filter_mac_mufYi' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mufYi' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mufYi_DSP48_4' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:9' bound to instance 'yuv_filter_mac_mufYi_DSP48_4_U' of component 'yuv_filter_mac_mufYi_DSP48_4' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mufYi_DSP48_4' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mufYi_DSP48_4' (9#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mufYi' (10#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mufYi' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mufYi.vhd:41' bound to instance 'yuv_filter_mac_mufYi_U6' of component 'yuv_filter_mac_mufYi' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:387]
+INFO: [Synth 8-256] done synthesizing module 'rgb2yuv11' (11#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/rgb2yuv11.vhd:65]
+INFO: [Synth 8-3491] module 'yuv_scale' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_scale.vhd:12' bound to instance 'yuv_scale_U0' of component 'yuv_scale' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:498]
+INFO: [Synth 8-638] synthesizing module 'yuv_scale' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_scale.vhd:66]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mul_mubkb' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:31' bound to instance 'yuv_filter_mul_mubkb_U28' of component 'yuv_filter_mul_mubkb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_scale.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'yuv_scale' (12#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_scale.vhd:66]
+INFO: [Synth 8-3491] module 'yuv2rgb' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:12' bound to instance 'yuv2rgb_U0' of component 'yuv2rgb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:550]
+INFO: [Synth 8-638] synthesizing module 'yuv2rgb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:55]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mul_mubkb' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mul_mubkb.vhd:31' bound to instance 'yuv_filter_mul_mubkb_U42' of component 'yuv_filter_mul_mubkb' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:280]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mug8j' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:41' bound to instance 'yuv_filter_mac_mug8j_U43' of component 'yuv_filter_mac_mug8j' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:292]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mug8j' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_mug8j_DSP48_5' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:9' bound to instance 'yuv_filter_mac_mug8j_DSP48_5_U' of component 'yuv_filter_mac_mug8j_DSP48_5' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_mug8j_DSP48_5' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mug8j_DSP48_5' (13#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_mug8j' (14#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_mug8j.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_muhbi' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:41' bound to instance 'yuv_filter_mac_muhbi_U44' of component 'yuv_filter_mac_muhbi' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:306]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_muhbi' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_muhbi_DSP48_6' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:9' bound to instance 'yuv_filter_mac_muhbi_DSP48_6_U' of component 'yuv_filter_mac_muhbi_DSP48_6' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_muhbi_DSP48_6' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_muhbi_DSP48_6' (15#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_muhbi' (16#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muhbi.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter dout_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_muibs' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:41' bound to instance 'yuv_filter_mac_muibs_U45' of component 'yuv_filter_mac_muibs' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_muibs' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter dout_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'yuv_filter_mac_muibs_DSP48_7' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:9' bound to instance 'yuv_filter_mac_muibs_DSP48_7_U' of component 'yuv_filter_mac_muibs_DSP48_7' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'yuv_filter_mac_muibs_DSP48_7' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_muibs_DSP48_7' (17#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter_mac_muibs' (18#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter_mac_muibs.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'yuv2rgb' (19#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv2rgb.vhd:55]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_yuv_channels_ch1_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:66]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A_shiftReg' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:10' bound to instance 'U_fifo_w8_d2_A_shiftReg' of component 'fifo_w8_d2_A_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A_shiftReg' (20#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A' (21#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:66]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_yuv_channels_ch2_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:604]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_yuv_channels_ch3_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:617]
+INFO: [Synth 8-3491] module 'fifo_w16_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:47' bound to instance 'p_yuv_width_U' of component 'fifo_w16_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:630]
+INFO: [Synth 8-638] synthesizing module 'fifo_w16_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:66]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w16_d2_A_shiftReg' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:10' bound to instance 'U_fifo_w16_d2_A_shiftReg' of component 'fifo_w16_d2_A_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'fifo_w16_d2_A_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w16_d2_A_shiftReg' (22#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w16_d2_A' (23#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:66]
+INFO: [Synth 8-3491] module 'fifo_w16_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:47' bound to instance 'p_yuv_height_U' of component 'fifo_w16_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:643]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'Y_scale_c_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:656]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'U_scale_c_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:669]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'V_scale_c_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:682]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_scale_channels_ch1_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:695]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_scale_channels_ch2_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:708]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w8_d2_A.vhd:47' bound to instance 'p_scale_channels_ch3_U' of component 'fifo_w8_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:721]
+INFO: [Synth 8-3491] module 'fifo_w16_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:47' bound to instance 'p_scale_width_U' of component 'fifo_w16_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:734]
+INFO: [Synth 8-3491] module 'fifo_w16_d2_A' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/fifo_w16_d2_A.vhd:47' bound to instance 'p_scale_height_U' of component 'fifo_w16_d2_A' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:747]
+INFO: [Synth 8-3491] module 'start_for_yuv_scajbC' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:47' bound to instance 'start_for_yuv_scajbC_U' of component 'start_for_yuv_scajbC' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:760]
+INFO: [Synth 8-638] synthesizing module 'start_for_yuv_scajbC' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:66]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_yuv_scajbC_shiftReg' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:10' bound to instance 'U_start_for_yuv_scajbC_shiftReg' of component 'start_for_yuv_scajbC_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'start_for_yuv_scajbC_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_yuv_scajbC_shiftReg' (24#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'start_for_yuv_scajbC' (25#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv_scajbC.vhd:66]
+INFO: [Synth 8-3491] module 'start_for_yuv2rgbkbM' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:47' bound to instance 'start_for_yuv2rgbkbM_U' of component 'start_for_yuv2rgbkbM' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:773]
+INFO: [Synth 8-638] synthesizing module 'start_for_yuv2rgbkbM' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:66]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_yuv2rgbkbM_shiftReg' declared at 'd:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:10' bound to instance 'U_start_for_yuv2rgbkbM_shiftReg' of component 'start_for_yuv2rgbkbM_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'start_for_yuv2rgbkbM_shiftReg' [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_yuv2rgbkbM_shiftReg' (26#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'start_for_yuv2rgbkbM' (27#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/start_for_yuv2rgbkbM.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'yuv_filter' (28#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/e167/hdl/vhdl/yuv_filter.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'bd_0_hls_inst_0' (29#1) [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:136]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1094.406 ; gain = 59.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1094.406 ; gain = 59.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1094.406 ; gain = 59.363
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1094.406 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/yuv_filter_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/yuv_filter_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1230.570 ; gain = 6.656
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1230.570 ; gain = 195.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1230.570 ; gain = 195.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1230.570 ; gain = 195.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1230.570 ; gain = 195.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   22 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 6     
+	   5 Input   16 Bit       Adders := 1     
+	   4 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   3 Input   14 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 15    
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               22 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 19    
+	               15 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 29    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 66    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 12    
+	   7 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 65    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP rgb2yuv11_U0/bound_reg_660_reg, operation Mode is: (A*B)'.
+DSP Report: register rgb2yuv11_U0/bound_reg_660_reg is absorbed into DSP rgb2yuv11_U0/bound_reg_660_reg.
+DSP Report: operator rgb2yuv11_U0/yuv_filter_mul_mubkb_U1/yuv_filter_mul_mubkb_DSP48_0_U/p_cvt is absorbed into DSP rgb2yuv11_U0/bound_reg_660_reg.
+DSP Report: Generating DSP yuv_scale_U0/bound_reg_305_reg, operation Mode is: (A2*B2)'.
+DSP Report: register yuv_scale_U0/width_reg_280_reg is absorbed into DSP yuv_scale_U0/bound_reg_305_reg.
+DSP Report: register yuv_scale_U0/height_reg_285_reg is absorbed into DSP yuv_scale_U0/bound_reg_305_reg.
+DSP Report: register yuv_scale_U0/bound_reg_305_reg is absorbed into DSP yuv_scale_U0/bound_reg_305_reg.
+DSP Report: operator yuv_scale_U0/yuv_filter_mul_mubkb_U28/yuv_filter_mul_mubkb_DSP48_0_U/p_cvt is absorbed into DSP yuv_scale_U0/bound_reg_305_reg.
+DSP Report: Generating DSP yuv2rgb_U0/bound_reg_644_reg, operation Mode is: (A2*B2)'.
+DSP Report: register yuv2rgb_U0/width_reg_631_reg is absorbed into DSP yuv2rgb_U0/bound_reg_644_reg.
+DSP Report: register yuv2rgb_U0/height_reg_637_reg is absorbed into DSP yuv2rgb_U0/bound_reg_644_reg.
+DSP Report: register yuv2rgb_U0/bound_reg_644_reg is absorbed into DSP yuv2rgb_U0/bound_reg_644_reg.
+DSP Report: operator yuv2rgb_U0/yuv_filter_mul_mubkb_U42/yuv_filter_mul_mubkb_DSP48_0_U/p_cvt is absorbed into DSP yuv2rgb_U0/bound_reg_644_reg.
+DSP Report: Generating DSP yuv_scale_U0/trunc_ln1_reg_324_reg, operation Mode is: (A*B)'.
+DSP Report: register yuv_scale_U0/trunc_ln1_reg_324_reg is absorbed into DSP yuv_scale_U0/trunc_ln1_reg_324_reg.
+DSP Report: operator yuv_scale_U0/mul_ln138_fu_215_p2 is absorbed into DSP yuv_scale_U0/trunc_ln1_reg_324_reg.
+DSP Report: Generating DSP yuv_scale_U0/trunc_ln2_reg_329_reg, operation Mode is: (A*B)'.
+DSP Report: register yuv_scale_U0/trunc_ln2_reg_329_reg is absorbed into DSP yuv_scale_U0/trunc_ln2_reg_329_reg.
+DSP Report: operator yuv_scale_U0/mul_ln139_fu_224_p2 is absorbed into DSP yuv_scale_U0/trunc_ln2_reg_329_reg.
+DSP Report: Generating DSP yuv_scale_U0/trunc_ln_reg_319_reg, operation Mode is: (A*B)'.
+DSP Report: register yuv_scale_U0/trunc_ln_reg_319_reg is absorbed into DSP yuv_scale_U0/trunc_ln_reg_319_reg.
+DSP Report: operator yuv_scale_U0/mul_ln137_fu_206_p2 is absorbed into DSP yuv_scale_U0/trunc_ln_reg_319_reg.
+DSP Report: Generating DSP yuv2rgb_U0/grp_fu_623_p2, operation Mode is: (A:0x3fffff30)*B.
+DSP Report: operator yuv2rgb_U0/grp_fu_623_p2 is absorbed into DSP yuv2rgb_U0/grp_fu_623_p2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1230.570 ; gain = 195.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|yuv_filter_mac_mucud_DSP48_1 | C+A*B            | 9      | 7      | 9      | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_mudEe_DSP48_2 | C+A*B            | 9      | 7      | 10     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_mueOg_DSP48_3 | C+A*B            | 9      | 9      | 10     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_mufYi_DSP48_4 | C+A*B            | 9      | 8      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_mufYi_DSP48_4 | C+A*B            | 9      | 8      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_mug8j_DSP48_5 | C+A*B            | 11     | 9      | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_muhbi_DSP48_6 | C+A*B            | 11     | 8      | 18     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter_mac_muibs_DSP48_7 | C+A*B            | 8      | 8      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|yuv_filter                   | (A*B)'           | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|yuv_filter                   | (A2*B2)'         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|yuv_filter                   | (A2*B2)'         | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|yuv_scale                    | (A*B)'           | 8      | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|yuv_scale                    | (A*B)'           | 8      | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|yuv_scale                    | (A*B)'           | 8      | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|yuv2rgb                      | (A:0x3fffff30)*B | 8      | 9      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1252.508 ; gain = 217.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1302.555 ; gain = 267.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1320.609 ; gain = 285.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   101|
+|2     |DSP48E1 |    15|
+|11    |LUT1    |    25|
+|12    |LUT2    |   125|
+|13    |LUT3    |    54|
+|14    |LUT4    |   235|
+|15    |LUT5    |   101|
+|16    |LUT6    |   128|
+|17    |FDRE    |   669|
+|18    |FDSE    |    38|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1338.770 ; gain = 167.563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1338.770 ; gain = 303.727
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1350.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1354.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 1354.336 ; gain = 319.293
+INFO: [Common 17-1381] The checkpoint 'D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 1d19e1fd6f1495d2
+INFO: [Coretcl 2-1174] Renamed 48 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/repo/high-level-synthesis-flow-on-zynq-using-vivado-hls/source/lab2/yuv_filter.prj/solution3/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  2 15:39:12 2020...

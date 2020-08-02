@@ -1,0 +1,194 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  2 15:42:17 2020
+| Host         : DESKTOP-JP4319F running 64-bit major release  (build 9200)
+| Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_bd_0_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 31
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 10         |
+| DPOP-1 | Warning  | PREG Output pipelining | 8          |
+| DPOP-2 | Warning  | MREG Output pipelining | 12         |
+| ZPS7-1 | Warning  | PS7 block required     | 1          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg input bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg input bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2 input bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p input bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p input bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p input bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p input bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln1_reg_324_reg input bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln1_reg_324_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln2_reg_329_reg input bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln2_reg_329_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln_reg_319_reg input bd_0_i/hls_inst/U0/yuv_scale_U0/trunc_ln_reg_319_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mucud_U2/yuv_filter_mac_mucud_DSP48_1_U/p output bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mucud_U2/yuv_filter_mac_mucud_DSP48_1_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mudEe_U3/yuv_filter_mac_mudEe_DSP48_2_U/p output bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mudEe_U3/yuv_filter_mac_mudEe_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mueOg_U4/yuv_filter_mac_mueOg_DSP48_3_U/p output bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mueOg_U4/yuv_filter_mac_mueOg_DSP48_3_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U5/yuv_filter_mac_mufYi_DSP48_4_U/p output bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U5/yuv_filter_mac_mufYi_DSP48_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/p output bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2 output bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_mug8j_U43/yuv_filter_mac_mug8j_DSP48_5_U/p output bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_mug8j_U43/yuv_filter_mac_mug8j_DSP48_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p output bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/bound_reg_660_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mucud_U2/yuv_filter_mac_mucud_DSP48_1_U/p multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mucud_U2/yuv_filter_mac_mucud_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mudEe_U3/yuv_filter_mac_mudEe_DSP48_2_U/p multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mudEe_U3/yuv_filter_mac_mudEe_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mueOg_U4/yuv_filter_mac_mueOg_DSP48_3_U/p multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mueOg_U4/yuv_filter_mac_mueOg_DSP48_3_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U5/yuv_filter_mac_mufYi_DSP48_4_U/p multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U5/yuv_filter_mac_mufYi_DSP48_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/p multiplier stage bd_0_i/hls_inst/U0/rgb2yuv11_U0/yuv_filter_mac_mufYi_U6/yuv_filter_mac_mufYi_DSP48_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/bound_reg_644_reg multiplier stage bd_0_i/hls_inst/U0/yuv2rgb_U0/bound_reg_644_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2 multiplier stage bd_0_i/hls_inst/U0/yuv2rgb_U0/grp_fu_623_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_mug8j_U43/yuv_filter_mac_mug8j_DSP48_5_U/p multiplier stage bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_mug8j_U43/yuv_filter_mac_mug8j_DSP48_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p multiplier stage bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muhbi_U44/yuv_filter_mac_muhbi_DSP48_6_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p multiplier stage bd_0_i/hls_inst/U0/yuv2rgb_U0/yuv_filter_mac_muibs_U45/yuv_filter_mac_muibs_DSP48_7_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/U0/yuv_scale_U0/bound_reg_305_reg multiplier stage bd_0_i/hls_inst/U0/yuv_scale_U0/bound_reg_305_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

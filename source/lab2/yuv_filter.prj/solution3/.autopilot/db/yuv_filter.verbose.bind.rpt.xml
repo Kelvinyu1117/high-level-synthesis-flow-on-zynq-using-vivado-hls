@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'yuv_filter'" level="0">
+<item name = "Date">Sun Aug  2 15:34:20 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">yuv_filter.prj</item>
+<item name = "Solution">solution3</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 11.004 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">40013, 2457613, 0.440 ms, 27.044 ms, 40008, 2457608, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_yuv2rgb_fu_172">yuv2rgb, 40006, 2457606, 0.440 ms, 27.043 ms, 40006, 2457606, none</column>
+<column name="grp_rgb2yuv11_fu_191">rgb2yuv11, 40007, 2457607, 0.440 ms, 27.044 ms, 40007, 2457607, none</column>
+<column name="grp_yuv_scale_fu_219">yuv_scale, 40004, 2457604, 0.440 ms, 27.043 ms, 40004, 2457604, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
